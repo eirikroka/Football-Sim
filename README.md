@@ -4,7 +4,8 @@ This repository contains code for performing football simulations based on ELO v
 It also includes an interactive app that visualizes the results and data from 100 different simulations, using seeds ranging from 1 to 100.  
 
 This project is purely for fun and serves as my first foray into coding. I have built and expanded on it over time, so there may be some amateur mistakes, a lack of comments, and a lot of experimental code.  
-The use of AI for coding has varied throughout the project. AI was used much more in the earlier stages than it is now.
+The use of AI for coding has varied throughout the project. 
+AI was used much more in the earlier stages than it is now.
 
 ### Important files in this Repository:
 
