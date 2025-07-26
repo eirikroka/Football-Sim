@@ -115,39 +115,39 @@ sim_results$group_tables %>%
 
 team <- champion
 
-results %>%
+cl_results %>%
   filter(Stage == "Knockout") %>%
   select(Club_A, Club_B, Result_A, Result_B, Round, Penalty) %>%
   filter(Club_A == team | Club_B == team) %>%
   arrange(desc(Round)) %>%
   kable()
 
-results %>%
+cl_results %>%
   filter(Stage == "Knockout") %>%
   filter(Round == 1) %>%
   select(Club_A, Club_B, Result_A, Result_B, Penalty) %>%
   mutate(Winner = if_else(Result_A > Result_B, "A", "B")) %>%
   count(Winner)
 
-results %>%
+cl_results %>%
   filter(Stage == "Knockout") %>%
   filter(Round == 2) %>%
   select(Club_A, Club_B, Result_A, Result_B, Penalty) %>%
   kable()
 
-results %>%
+cl_results %>%
   filter(Stage == "Knockout") %>%
   filter(Round == 3) %>%
   select(Club_A, Club_B, Result_A, Result_B, Penalty) %>%
   kable()
 
-results %>%
+cl_results %>%
   filter(Stage == "Knockout") %>%
   filter(Round == 4) %>%
   select(Club_A, Club_B, Result_A, Result_B, Penalty) %>%
   kable()
 
-results %>%
+cl_results %>%
   filter(Stage == "Knockout") %>%
   filter(Round == 5) %>%
   select(Club_A, Club_B, Result_A, Result_B, Penalty) %>%
@@ -254,7 +254,7 @@ result_tables %>%
 club_data %>%
   filter(Club == champion)
 
-results %>%
+cl_results %>%
   filter(Stage == "Knockout") %>%
   filter(Club_A == champion | Club_B == champion) %>%
   select(Club_A, Club_B, Result_A, Result_B, Penalty, Round) %>%
@@ -271,7 +271,7 @@ result_tables %>%
 club_data %>%
     filter(Club == europa_champ)
 
-europa_results %>%
+el_results %>%
   select(Club_A, Club_B, Result_A, Result_B, Penalty, Round) %>%
   filter(Club_A == europa_champ | Club_B == europa_champ) %>%
   arrange(desc(Round)) %>%
@@ -353,6 +353,8 @@ for (group in group_vector) {
   # Pause to allow viewing the plot before moving to the next one
   readline(prompt = "Press [Enter] to continue to the next plot...")
 }
+
+
 
 
 
