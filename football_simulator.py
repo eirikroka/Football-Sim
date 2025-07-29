@@ -759,12 +759,15 @@ tabs = dbc.Row(
 app = Dash(__name__ ,external_stylesheets = [dbc.themes.LUX, dbc_css])
 server = app.server
 
+app.title = ‘Simulated football’
+
+
 app.layout = dbc.Container(
     children = [
 
         html.Br(),
 
-        html.H1('Eiriks football simulations results overview', style = {'textAlign' : 'center'}),
+        html.H1('Eirik's Football Simulation Results Overview', style = {'textAlign' : 'center'}),
 
         html.Br(),
 
