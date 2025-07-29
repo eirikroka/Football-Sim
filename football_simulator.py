@@ -768,7 +768,7 @@ app.layout = dbc.Container(
 
         html.Br(),
 
-        html.H1('Eirik's Football Simulation Results Overview', style = {'textAlign' : 'center'}),
+        html.H1("Eirik's Football Simulation Results Overview", style = {'textAlign' : 'center'}),
 
         html.Br(),
 
