@@ -14,7 +14,6 @@ import plotly.express as px
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
 from dash import Dash, dcc, html
-import dash_bootstrap_components as dbc
 from dash_bootstrap_templates import load_figure_template
 
 import dash_cytoscape as cyto
