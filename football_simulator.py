@@ -755,10 +755,12 @@ tabs = dbc.Row(
 
 # In[21]:
 
-app.title = "Simulated football"
+
 
 app = Dash(__name__ ,external_stylesheets = [dbc.themes.LUX, dbc_css])
 server = app.server
+
+app.title = "Simulated football"
 
 
 
