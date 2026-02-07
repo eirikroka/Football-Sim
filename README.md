@@ -14,7 +14,7 @@ This is my first coding project outside of school, and I am working on it purely
   Contains the code I used to save the results of 100 different simulations.  
 
 - **`App1.1.ipynb`**  
-  This is the app that visualizes the simulation data. It is built using Dash in Python.  
+  This is the app that visualizes the simulation data. It is built using Dash for Python.  
 
 ---
 
